@@ -42,11 +42,12 @@ class TestFunc(unittest.TestCase):
         etalon = ('4', True)
         self.assertEqual(result, etalon)
 
-    def test_add_new_shelf(self):
+    def test_false_add_new_shelf(self):
         """Это метод тестирования функции добавления этиментов в словарь directories"""
         result = add_new_shelf()
         etalon = ('4', False)
         self.assertEqual(result, etalon)
+
 
 if __name__ == '__main__':
     unittest.main()
